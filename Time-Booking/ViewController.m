@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+<UIWebViewDelegate>
+
 @property (weak, nonatomic) IBOutlet UITextField *idField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
 - (IBAction)buttonWasHit:(id)sender;
@@ -17,7 +19,7 @@
 @end
 
 @implementation ViewController
-            
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -34,8 +36,9 @@
 
 - (void)loginToTimeBookingWithPin:(NSString *)pin pass:(NSString *)pass {
     UIWebView *webView = [[UIWebView alloc] initWithFrame:self.view.frame];
+    webView.delegate = self;
     
-    NSMutableURLRequest *loginRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://timebooking.tatatechnologies.com/bypass_loginUB.do"]];
+    NSMutableURLRequest *loginRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://timebooking.tatatechnologies.com/bypass_loginUB.do"]];
     [loginRequest setHTTPMethod:@"POST"];
     
     NSString *postString = [NSString stringWithFormat:@"loginid=%@&password=%@",
@@ -45,6 +48,7 @@
     [loginRequest setHTTPBody:postBody];
     
     [webView loadRequest:[loginRequest mutableCopy]];
+    
     [self.view addSubview:webView];
 }
 
@@ -55,6 +59,18 @@
                                                                                  (CFStringRef)@":/?@!$&'()*+,;=",
                                                                                  kCFStringEncodingUTF8));
     return [result stringByReplacingOccurrencesOfString:@" " withString:@"+"];
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)theWebView
+{
+    CGSize contentSize = theWebView.scrollView.contentSize;
+    CGSize viewSize = self.view.bounds.size;
+    
+    float rw = viewSize.width / contentSize.width;
+    
+    theWebView.scrollView.minimumZoomScale = rw;
+    theWebView.scrollView.maximumZoomScale = rw;
+    theWebView.scrollView.zoomScale = rw;
 }
 
 @end
