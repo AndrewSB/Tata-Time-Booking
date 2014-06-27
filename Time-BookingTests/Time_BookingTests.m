@@ -1,18 +1,18 @@
 //
-//  Tata_Technology_ObjCTests.m
-//  Tata-Technology-ObjCTests
+//  Time_BookingTests.m
+//  Time-BookingTests
 //
-//  Created by Andrew Breckenridge on 6/11/14.
-//  Copyright (c) 2014 Tata Technology. All rights reserved.
+//  Created by Andrew Breckenridge on 6/27/14.
+//  Copyright (c) 2014 Tata_Technologies. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface Tata_Technology_ObjCTests : XCTestCase
+@interface Time_BookingTests : XCTestCase
 
 @end
 
-@implementation Tata_Technology_ObjCTests
+@implementation Time_BookingTests
 
 - (void)setUp {
     [super setUp];
