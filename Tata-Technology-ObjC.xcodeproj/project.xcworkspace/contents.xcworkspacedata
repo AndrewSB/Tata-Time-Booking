@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Tata-Time-Booking.xcodeproj">
+      location = "self:Tata-Technology-ObjC.xcodeproj">
    </FileRef>
 </Workspace>

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "462B6357193FB93F00442029"
-               BuildableName = "Tata-Time-Booking.app"
-               BlueprintName = "Tata-Time-Booking"
-               ReferencedContainer = "container:Tata-Time-Booking.xcodeproj">
+               BlueprintIdentifier = "4610185B1948BCF1002E974E"
+               BuildableName = "Tata-Technology-ObjC.app"
+               BlueprintName = "Tata-Technology-ObjC"
+               ReferencedContainer = "container:Tata-Technology-ObjC.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "462B6369193FB93F00442029"
-               BuildableName = "Tata-Time-BookingTests.xctest"
-               BlueprintName = "Tata-Time-BookingTests"
-               ReferencedContainer = "container:Tata-Time-Booking.xcodeproj">
+               BlueprintIdentifier = "461018711948BCF2002E974E"
+               BuildableName = "Tata-Technology-ObjCTests.xctest"
+               BlueprintName = "Tata-Technology-ObjCTests"
+               ReferencedContainer = "container:Tata-Technology-ObjC.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "462B6357193FB93F00442029"
-            BuildableName = "Tata-Time-Booking.app"
-            BlueprintName = "Tata-Time-Booking"
-            ReferencedContainer = "container:Tata-Time-Booking.xcodeproj">
+            BlueprintIdentifier = "4610185B1948BCF1002E974E"
+            BuildableName = "Tata-Technology-ObjC.app"
+            BlueprintName = "Tata-Technology-ObjC"
+            ReferencedContainer = "container:Tata-Technology-ObjC.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -61,10 +61,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "462B6357193FB93F00442029"
-            BuildableName = "Tata-Time-Booking.app"
-            BlueprintName = "Tata-Time-Booking"
-            ReferencedContainer = "container:Tata-Time-Booking.xcodeproj">
+            BlueprintIdentifier = "4610185B1948BCF1002E974E"
+            BuildableName = "Tata-Technology-ObjC.app"
+            BlueprintName = "Tata-Technology-ObjC"
+            ReferencedContainer = "container:Tata-Technology-ObjC.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -79,10 +79,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "462B6357193FB93F00442029"
-            BuildableName = "Tata-Time-Booking.app"
-            BlueprintName = "Tata-Time-Booking"
-            ReferencedContainer = "container:Tata-Time-Booking.xcodeproj">
+            BlueprintIdentifier = "4610185B1948BCF1002E974E"
+            BuildableName = "Tata-Technology-ObjC.app"
+            BlueprintName = "Tata-Technology-ObjC"
+            ReferencedContainer = "container:Tata-Technology-ObjC.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

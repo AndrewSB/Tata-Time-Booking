@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Tata-Time-Booking.xcscheme</key>
+		<key>Tata-Technology-ObjC.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>462B6357193FB93F00442029</key>
+		<key>4610185B1948BCF1002E974E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>462B6369193FB93F00442029</key>
+		<key>461018711948BCF2002E974E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
