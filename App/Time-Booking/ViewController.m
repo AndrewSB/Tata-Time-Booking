@@ -23,6 +23,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
+}
+
+-(void)dismissKeyboard {
+    [self.idField resignFirstResponder];
+    [self.passwordField resignFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,8 +58,8 @@
     NSData *postBody = [postString dataUsingEncoding:NSUTF8StringEncoding];
     [loginRequest setHTTPBody:postBody];
     
-    [webView loadRequest:[loginRequest mutableCopy]];
-    
+    [webView loadRequest:loginRequest];
+    webView.scalesPageToFit = YES;
     [self.view addSubview:webView];
 }
 

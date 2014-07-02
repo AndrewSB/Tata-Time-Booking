@@ -20,12 +20,18 @@
                                 <rect key="frame" x="192" y="174" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="82" y="177" width="156" height="30"/>
+                                </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwv-Ho-eEi">
                                 <rect key="frame" x="212" y="303" width="38" height="30"/>
                                 <state key="normal" title="Login">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="141" y="280" width="38" height="30"/>
+                                </variation>
                                 <connections>
                                     <action selector="buttonWasHit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jA4-qO-qzX"/>
                                 </connections>
@@ -34,9 +40,20 @@
                                 <rect key="frame" x="192" y="225" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="82" y="220" width="156" height="30"/>
+                                </variation>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="451px-Tata_logo.svg" translatesAutoresizingMaskIntoConstraints="NO" id="ZYC-t1-7br">
+                                <rect key="frame" x="156" y="31" width="169" height="135"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZYC-t1-7br" secondAttribute="trailing" constant="155" id="JON-Wf-a49"/>
+                            <constraint firstItem="ZYC-t1-7br" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="156" id="gB9-Oa-TAy"/>
+                            <constraint firstAttribute="centerX" secondItem="ZYC-t1-7br" secondAttribute="centerX" constant="-0.5" id="x8U-Gn-C8H"/>
+                        </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <connections>
@@ -46,6 +63,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="244" y="246"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="451px-Tata_logo.svg" width="451" height="414"/>
+    </resources>
 </document>
